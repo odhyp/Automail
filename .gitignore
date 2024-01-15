@@ -9,3 +9,6 @@ __pycache__/
 .Python
 downloads/
 MANIFEST
+
+# Development directory
+data/
