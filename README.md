@@ -19,10 +19,13 @@ A Python project that automates various tasks related to government office lette
 
 - [ ] Add dependencies in requirements.txt
 - [ ] Add constants.py
+- [ ] Add manual input option
+- [ ] Add optical character recognition (OCR) for scanned PDF files
 
 ### In progress
 
 - [ ] Add PDF reader
+- [ ] Add method to find the needed string in the PDF
 
 ### Finished
 
