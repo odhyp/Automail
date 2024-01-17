@@ -23,3 +23,9 @@ def get_input_path(file_name: str):
     data_path = get_data_path()
     input_path = Path(data_path, file_name)
     return input_path
+
+
+def is_pdf(file_name: str):
+    """Check if the file is a PDF.
+    """
+    return file_name.endswith('.pdf')
