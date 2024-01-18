@@ -1,8 +1,13 @@
-from pypdf import PdfReader
+import fitz
 
 
 class PDF:
     def read_pdf(self, file_path: str):
-        reader = PdfReader(file_path)
-        page = reader.pages[0]
-        print(page.extract_text())
+        """Read the specified PDF and return its text content
+
+        Args:
+        - file_path (str): The path to the PDF file
+        """
+        with fitz.open(file_path) as doc:
+            text = doc[0].get_text()
+        return text
