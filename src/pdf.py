@@ -3,7 +3,7 @@ import fitz
 
 class PDF:
     def read_pdf(self, file_path: str):
-        """Read the specified PDF and return its text content
+        """Read the first page of the specified PDF and return its text content
 
         Args:
         - file_path (str): The path to the PDF file
