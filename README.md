@@ -21,6 +21,8 @@ A Python project that automates various tasks related to government office lette
 - [ ] Add constants.py
 - [ ] Add manual input option
 - [ ] Add optical character recognition (OCR) for scanned PDF files
+- [ ] Add Excel and file managers
+- [ ] Add CLI
 
 ### In progress
 
