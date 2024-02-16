@@ -22,7 +22,7 @@ class PDF:
         - file_path (str): The path to the PDF file
         """
         text = self.read_pdf(file_path=file_path)
-        pattern = r'Nomor\s*:\s*(\S.*?)\s+\b\w+\b'
+        pattern = r'(?i)Nomor\s*:\s*(\S.*?)\s+\b\w+\b'
         match = re.search(pattern, text)
         if match:
             return match.group(1)
