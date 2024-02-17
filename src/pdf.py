@@ -28,3 +28,17 @@ class PDF:
             return match.group(1)
         else:
             return None
+
+    def find_letter_date(self, file_path: str):
+        """Find the office letter date in the specified PDF
+
+        Args:
+        - file_path (str): The path to the PDF file
+        """
+        text = self.read_pdf(file_path=file_path)
+        pattern = r'\b(?:\d{1,2}\s+(?:Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember)\s+\d{4})\b'
+        match = re.search(pattern, text)
+        if match:
+            return match.group()
+        else:
+            return None
