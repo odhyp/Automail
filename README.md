@@ -26,11 +26,11 @@ A Python project that automates various tasks related to government office lette
 
 ### In progress
 
-- [ ] Add PDF reader
-- [ ] Add method to find the needed string in the PDF
+- [ ] Add method to find office letter number, date and agenda
 
 ### Finished
 
 - [x] Initial commits
 - [x] Update README.md
 - [x] Add utils.py
+- [x] Add PDF reader
